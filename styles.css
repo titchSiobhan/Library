@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col1: #0C172F;
+    --col2: #6D3263;
+    --col3: #DF6283;
+    --col4:#FCFCA4;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    width: max-content;
+    justify-self: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: var(--col1);
+    color: var(--col4);
+    border-radius: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+input {
+    margin: 10px 5px;
+    background-color: var(--col3);
+    color: var(--col4)
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: clamp(30%, 35%, 40%);
+    height: clamp(100px, 150px, 200px); 
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background-color: var(--col1);
+    color: var(--col4);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.library {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: var(--col2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button {
+    background-color: var(--col3);
+    padding: 10px;
+    border-radius: 5px;
+}
